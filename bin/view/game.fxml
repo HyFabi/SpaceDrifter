@@ -4,11 +4,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Sphere?>
 
-<Pane maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerGame">
    <children>
-      <Pane layoutX="199.0" layoutY="123.0" prefHeight="338.0" prefWidth="454.0">
+      <Pane layoutX="199.0" layoutY="481.0" prefHeight="101.0" prefWidth="100.0">
          <children>
-            <Sphere layoutX="227.0" layoutY="169.0" radius="50" />
+            <Sphere layoutX="50.0" layoutY="51.0" radius="50" />
          </children>
       </Pane>
       <ScrollBar layoutX="199.0" layoutY="97.0" />

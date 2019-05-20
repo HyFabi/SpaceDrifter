@@ -2,7 +2,8 @@ package application;
 	
 import java.io.IOException;
 
-import controller.Controller;
+import controller.ControllerGame;
+import controller.ControllerStartMenu;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -16,8 +17,9 @@ public class Main extends Application {
 	public static Pane root;
 	public static Pane gameBackground;
 	public static Player p = new Player();
-	static Scene scene;
-	static Controller c = new Controller();
+	public static Scene scene;
+	public static ControllerGame cg = new ControllerGame();
+	static ControllerStartMenu cm = new ControllerStartMenu();
 	static Stage s;
 	static Thread t = new Thread();
 	static Movement m = new Movement();

@@ -38,15 +38,11 @@ public class Player extends GameObject{
 	}
 	
 	public void followMouse() {
-		Pane p = getPane();
-		if(p == null) {
+		if(Main.cg.Player == null) {
 			return;
 		}
-		//lol
-		p.setLayoutX(MouseInfo.getPointerInfo().getLocation().getX());
-		p.setLayoutY(MouseInfo.getPointerInfo().getLocation().getY());
-		addPane(p);
-		System.out.println("X: " + p.getLayoutX() + " Y: " + p.getLayoutY());
-		p = null;
+		Main.cg.Player.setLayoutX(MouseInfo.getPointerInfo().getLocation().getX());
+		Main.cg.Player.setLayoutY(MouseInfo.getPointerInfo().getLocation().getY());
+		System.out.println("X: " + Main.cg.Player.getLayoutX() + " Y: " + Main.cg.Player.getLayoutY());
 	}
 }
