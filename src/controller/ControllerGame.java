@@ -21,5 +21,5 @@ public class ControllerGame{
     }
     
     @FXML
-    public Pane Player = new Pane();
+	public Pane Player;
 }

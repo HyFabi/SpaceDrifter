@@ -17,7 +17,7 @@ public class ControllerStartMenu {
     private URL location;
 
     @FXML
-    void btn1(MouseEvent event) throws IOException {
+    public void btn1(MouseEvent event) throws IOException {
     	Main.startGame();
     }
 
