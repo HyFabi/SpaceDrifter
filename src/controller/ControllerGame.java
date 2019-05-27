@@ -19,7 +19,4 @@ public class ControllerGame{
     void initialize() {
 
     }
-    
-    @FXML
-	public Pane Player;
 }

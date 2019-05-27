@@ -14,12 +14,11 @@ public class Player extends GameObject{
 		super(0, 0, 100, 0);
 	}
 	
-	public Pane getPane() {
+	public static Pane getPane() {
 		for(Object o : Main.root.getChildren()) {
 //			System.out.println(o);
 			if(o instanceof Pane) {
 				Pane p = (Pane) o;
-				Main.root.getChildren().remove(p);
 				return p;
 			}
 		}
@@ -27,22 +26,34 @@ public class Player extends GameObject{
 		return null;
 	}
 	
+	public static Pane getCollisionPane() {
+		return (Pane) getPane().getChildren().get(0);
+	}
+	
 	public void addPane(Pane p) {
 		Main.root.getChildren().add(p);
 	}
 	
 	public void doPaint(Pane p){
+		
 		p.setLayoutX(1 + p.getLayoutX());
 		Main.root.getChildren().add(p);
 		p = null;
 	}
 	
 	public void followMouse() {
-		if(Main.cg.Player == null) {
+		Pane p = getPane();
+		Main.root.getChildren().remove(p);
+		if(p == null) {
 			return;
 		}
-		Main.cg.Player.setLayoutX(MouseInfo.getPointerInfo().getLocation().getX());
-		Main.cg.Player.setLayoutY(MouseInfo.getPointerInfo().getLocation().getY());
-		System.out.println("X: " + Main.cg.Player.getLayoutX() + " Y: " + Main.cg.Player.getLayoutY());
+		p.setLayoutX(MouseInfo.getPointerInfo().getLocation().getX());
+		p.setLayoutY(MouseInfo.getPointerInfo().getLocation().getY());
+		addPane(p);
+		if(Main.debug) {
+			System.out.println("X: " + p.getLayoutX() + " Y: " + p.getLayoutY());
+		}
+		
+		p = null;
 	}
 }

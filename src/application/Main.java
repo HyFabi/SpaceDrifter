@@ -24,6 +24,8 @@ public class Main extends Application {
 	static Thread t = new Thread();
 	static Movement m = new Movement();
 	
+	public static boolean debug = false;
+	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
