@@ -1,4 +1,4 @@
-package application;
+package view;
 
 import javafx.animation.AnimationTimer;
 import model.Colision;

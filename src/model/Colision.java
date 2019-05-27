@@ -1,21 +1,23 @@
 package model;
 
-import application.Main;
+import javafx.scene.Node;
 import javafx.scene.shape.Box;
+import view.Main;
 
 public class Colision {
 	
-	public static boolean checkCollision() throws Exception {
-		for(Object o : Main.root.getChildren()) {
+	public static boolean checkCollision(){
+		for(Node n : Main.root.getChildren()) {
 //			System.out.println(o);
-			if(o instanceof Box) {
-				Box b = (Box) o;
+			if(n instanceof Box) {
+				Box b = (Box) n;
 				if(collisionDetection(b)) {
 					System.out.println("Collision");
+					return true;
 				}
 			}
 		}
-		throw new Exception("WIXA");
+		return false;
 	}
 	
 	public static boolean collisionDetection(Box b) {

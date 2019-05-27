@@ -2,8 +2,8 @@ package model;
 
 import java.awt.MouseInfo;
 
-import application.Main;
 import javafx.scene.layout.Pane;
+import view.Main;
 
 public class Player extends GameObject{
 	float shield;
