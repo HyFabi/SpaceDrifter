@@ -1,16 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Box?>
 <?import javafx.scene.shape.Sphere?>
 
 <Pane maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerGame">
    <children>
-      <Pane fx:id="Player" layoutX="199.0" layoutY="481.0" prefHeight="101.0" prefWidth="100.0">
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutY="8.0">
+         <image>
+            <Image url="@../../gfx/PMhrYUQSKB9sm5hmc8SStm-970-80.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="31.0" layoutY="378.0" prefHeight="0.0" prefWidth="0.0">
          <children>
-            <Sphere layoutX="50.0" layoutY="51.0" radius="50" />
+            <Pane layoutX="-47.0" layoutY="-51.0" prefHeight="100.0" prefWidth="100.0" />
+            <Sphere radius="50" />
          </children>
       </Pane>
-      <ScrollBar layoutX="199.0" layoutY="97.0" />
+      <Box depth="100" height="100" layoutX="409.0" layoutY="286.0" width="100" />
+      <Box depth="100" height="100" layoutX="751.0" layoutY="498.0" width="100" />
+      <Box depth="100" height="100" layoutX="256.0" layoutY="174.0" width="100" />
+      <Box depth="100" height="100" layoutX="435.0" layoutY="143.0" width="100" />
+      <Box depth="100" height="100" layoutX="605.0" layoutY="372.0" width="100" />
+      <Box depth="100" height="100" layoutX="771.0" layoutY="247.0" width="100" />
+      <Box depth="100" height="100" layoutX="959.0" layoutY="503.0" width="100" />
+      <Box depth="100" height="100" layoutX="1296.0" layoutY="702.0" width="100" />
+      <Box depth="100" height="100" layoutX="959.0" layoutY="687.0" width="100" />
+      <Box depth="100" height="100" layoutX="801.0" layoutY="378.0" width="100" />
+      <Box depth="100" height="100" layoutX="1316.0" layoutY="451.0" width="100" />
+      <Box depth="100" height="100" layoutX="243.0" layoutY="757.0" width="100" />
+      <Box depth="100" height="100" layoutX="243.0" layoutY="941.0" width="100" />
+      <Box depth="100" height="100" layoutX="90.0" layoutY="645.0" width="100" />
+      <Box depth="100" height="100" layoutX="269.0" layoutY="614.0" width="100" />
+      <Box depth="100" height="100" layoutX="439.0" layoutY="843.0" width="100" />
+      <Box depth="100" height="100" layoutX="1461.0" layoutY="426.0" width="100" />
+      <Box depth="100" height="100" layoutX="1487.0" layoutY="99.0" width="100" />
+      <Box depth="100" height="100" layoutX="1823.0" layoutY="203.0" width="100" />
+      <Box depth="100" height="100" layoutX="1469.0" layoutY="773.0" width="100" />
+      <Box depth="100" height="100" layoutX="1469.0" layoutY="957.0" width="100" />
+      <Box depth="100" height="100" layoutX="1804.0" layoutY="972.0" width="100" />
+      <Box depth="100" height="100" layoutX="1665.0" layoutY="859.0" width="100" />
+      <Box depth="100" height="100" layoutX="1831.0" layoutY="734.0" width="100" />
+      <Box depth="100" height="100" layoutX="793.0" layoutY="823.0" width="100" />
+      <Box depth="100" height="100" layoutX="424.0" layoutY="630.0" width="100" />
+      <Box depth="100" height="100" layoutX="819.0" layoutY="680.0" width="100" />
+      <Box depth="100" height="100" layoutX="989.0" layoutY="909.0" width="100" />
+      <Box depth="100" height="100" layoutX="1125.0" layoutY="216.0" width="100" />
+      <Box depth="100" height="100" layoutX="721.0" layoutY="99.0" width="100" />
    </children>
 </Pane>

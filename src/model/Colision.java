@@ -11,7 +11,7 @@ public class Colision {
 			if(o instanceof Box) {
 				Box b = (Box) o;
 				if(collisionDetection(b)) {
-					
+					System.out.println("Collision");
 				}
 			}
 		}
